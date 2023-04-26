@@ -78,6 +78,18 @@ body {
   color: var(--logo-part-cl);
 }
 
+.logo-bottom {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--logo-part-cl);
+  margin-bottom: 16px;
+}
 .logo-part {
   color: var(--subtitle-cl);
 }
