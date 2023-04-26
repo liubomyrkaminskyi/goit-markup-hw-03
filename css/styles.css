@@ -124,25 +124,24 @@ body {
 
 /* Buttons */
 .main-btn {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
+  background-color: var(--logo-part-cl);
+  color: var(--main-bg-cl);
 
-    background-color: var(--logo-part-cl);
-    color: var(--main-bg-cl);
-
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .main-btn:hover,
@@ -162,6 +161,8 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--logo-part-cl);
+  border: 1px solid var(--secondary-fon-color);
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -228,7 +229,9 @@ body {
 
 /* Footer */
 .footer-text {
+  display: inline-block;
   margin-top: 16px;
+  margin-bottom: 16px;
   width: 264px;
   color: #f4f4fd;
   font-size: 16px;
@@ -243,6 +246,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-photo-type {
   font-size: 16px;
@@ -284,15 +288,14 @@ body {
 
 .header-nav-menu {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-menu .item:not(:last-child) {
   margin-right: 40px;
 }
 .header-nav-menu.link {
-  padding-top: 24px;
-  padding-bottom: 24px;
-
   font-weight: 500;
 }
 .adr-list {
@@ -338,8 +341,8 @@ body {
 }
 
 .team-list {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-list .item {
@@ -411,4 +414,5 @@ body {
 }
 
 .adr-list .item:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
+}
