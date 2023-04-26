@@ -96,7 +96,6 @@ body {
 
 .logo-part-bottom {
   display: inline-block;
-  margin-bottom: 16px;
 
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -124,8 +123,14 @@ body {
   color: inherit;
 }
 
-.unit-info:hover,
-.unit-info:focus,
+.unit-info-item {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+.unit-info-item:hover,
+.unit-info-item:focus,
 .unit-menu:hover,
 .unit-menu:focus {
   color: var(--accent-txt-cl);
@@ -244,9 +249,6 @@ body {
 
 /* Footer */
 .footer-text {
-  display: inline-block;
-  margin-top: 16px;
-  margin-bottom: 16px;
   width: 264px;
   color: #f4f4fd;
   font-size: 16px;
@@ -297,6 +299,7 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: 332px;
 }
 
 .header-nav-menu {
@@ -317,8 +320,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
-  color: var(--primary-text-color);
 }
 
 .benefits {
@@ -358,7 +359,7 @@ body {
 
 .team-list .item {
   width: calc((100% - 72px) / 4);
-  background-color: var(--primary-fon-color);
+  background-color: var(--main-bg-cl);
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -400,7 +401,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 72px;
+  margin-bottom: 72px;
 }
 
 .works-list {
@@ -425,4 +426,17 @@ body {
 
 .adr-list .item:not(:last-child) {
   margin-right: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
