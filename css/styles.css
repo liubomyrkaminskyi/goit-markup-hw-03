@@ -67,6 +67,8 @@ body {
 
 /* Logo */
 .logo {
+  display: inline-block;
+  margin-bottom: 16px;
   text-transform: uppercase;
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -284,12 +286,12 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav-menu {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-nav-menu .item:not(:last-child) {
